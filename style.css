@@ -68,15 +68,14 @@ body {
 
 .intro img {
   max-width: 100%;
-  /* margin-left: 100px; */
-  transform: rotateY(-180deg);
   height: auto;
 }
 
 /* Contact Us Section Styles */
 .contact {
   padding: 50px;
-  color: #ffffff;
+  color: #fcaf02;
+  gap: 20px;
 }
 
 .contact input,
@@ -89,6 +88,13 @@ body {
   border-radius: 500px;
   outline: none;
   background-color: #000000;
+  margin-top: 4px;
+}
+
+.contact span {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .contact input:focus,
@@ -110,26 +116,34 @@ body {
   text-align: center;
 }
 
-.contact button:hover {
-  background-color: #0056b3;
-}
-
 /* Table Section Styles */
 .table {
   padding: 50px;
+  justify-content: center;
 }
 
 .table table {
   width: 100%;
-  border-collapse: collapse;
+  color: #fcaf02;
+  border-top: 1px solid #fcaf02;
+  border-bottom: 1px solid #fcaf02;
 }
 
-.table th,
-.table td {
-  padding: 10px;
-  border: 1px solid #ccc;
+.table th {
+  padding: 10px 20px;
+  border-bottom: 1px solid #fcaf02;
+  border-left: 1px solid #fcaf02;
+  border-right: 1px solid #fcaf02;
+}
+.table td,tr {
+  padding: 10px 20px;
+  border-left: 1px solid #fcaf02;
+  border-right: 1px solid #fcaf02;
+ 
 }
 
 .table tfoot {
   font-weight: bold;
+  background-color: #fcaf02;
+  color: #000000;
 }
